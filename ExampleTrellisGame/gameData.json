@@ -1,0 +1,188 @@
+{
+  "passages": [
+    {
+      "text": "Welcome to the Trellis example story!\n\nThis example will walk through the features of the game engine.\n\n[[Let's get started!|Choices]]",
+      "links": [
+        {
+          "name": "Let's get started!|Choices",
+          "link": "Let's get started!|Choices",
+          "broken": true
+        }
+      ],
+      "name": "Welcome to Trellis",
+      "pid": "1",
+      "position": {
+        "x": "900",
+        "y": "400"
+      }
+    },
+    {
+      "text": "The Trellis engine helps make interactive fiction work. \n\nInteractive fiction requires choices, right?\n\n[[Right.|Choice 1]]\n[[I guess.|Choice 2]]",
+      "links": [
+        {
+          "name": "Right.|Choice 1",
+          "link": "Right.|Choice 1",
+          "broken": true
+        },
+        {
+          "name": "I guess.|Choice 2",
+          "link": "I guess.|Choice 2",
+          "broken": true
+        }
+      ],
+      "name": "Choices",
+      "pid": "2",
+      "position": {
+        "x": "900",
+        "y": "525"
+      }
+    },
+    {
+      "text": "Exactly!\n\nAnd each choice can matter, leading virtually anywhere.\n\n[[Wow|Macros]]",
+      "links": [
+        {
+          "name": "Wow|Macros",
+          "link": "Wow|Macros",
+          "broken": true
+        }
+      ],
+      "name": "Choice 1",
+      "pid": "3",
+      "position": {
+        "x": "900",
+        "y": "650"
+      }
+    },
+    {
+      "text": "Of course, wrong choices can lead seemingly anywhere.\n\n[[I'll be careful|Macros]]",
+      "links": [
+        {
+          "name": "I'll be careful|Macros",
+          "link": "I'll be careful|Macros",
+          "broken": true
+        }
+      ],
+      "name": "Choice 2",
+      "pid": "4",
+      "position": {
+        "x": "1025",
+        "y": "650"
+      }
+    },
+    {
+      "text": "Trellis supports several macros. Macros are handled in the order they come in.\n\nSelect a macro to begin:\n[[Display]]\n[[Sleep]]\n[[Wait]]\n[[Custom]]\n\n[[Exit]]",
+      "links": [
+        {
+          "name": "Display",
+          "link": "Display",
+          "pid": "8"
+        },
+        {
+          "name": "Sleep",
+          "link": "Sleep",
+          "pid": "6"
+        },
+        {
+          "name": "Wait",
+          "link": "Wait",
+          "pid": "7"
+        },
+        {
+          "name": "Custom",
+          "link": "Custom",
+          "pid": "9"
+        },
+        {
+          "name": "Exit",
+          "link": "Exit",
+          "pid": "10"
+        }
+      ],
+      "name": "Macros",
+      "pid": "5",
+      "position": {
+        "x": "900",
+        "y": "775"
+      }
+    },
+    {
+      "text": "The sleep macro is used to<sleep 1000> well...<sleep 1000> sleep.\n\n[[Go back|Macros]]",
+      "links": [
+        {
+          "name": "Go back|Macros",
+          "link": "Go back|Macros",
+          "broken": true
+        }
+      ],
+      "name": "Sleep",
+      "pid": "6",
+      "position": {
+        "x": "900",
+        "y": "900"
+      }
+    },
+    {
+      "text": "The wait macro waits until the engine is told to continue. This could be a mouse click or the traditional\n<wait>\n\n[[Go back|Macros]]",
+      "links": [
+        {
+          "name": "Go back|Macros",
+          "link": "Go back|Macros",
+          "broken": true
+        }
+      ],
+      "name": "Wait",
+      "pid": "7",
+      "position": {
+        "x": "1025",
+        "y": "900"
+      }
+    },
+    {
+      "text": "Display is the default macro. Display is used to render text.\n\nNo special syntax is associated with it.\n\n[[Go back|Macros]]",
+      "links": [
+        {
+          "name": "Go back|Macros",
+          "link": "Go back|Macros",
+          "broken": true
+        }
+      ],
+      "name": "Display",
+      "pid": "8",
+      "position": {
+        "x": "775",
+        "y": "900"
+      }
+    },
+    {
+      "text": "Custom macros provide the most versitality. Make text jiggle, trigger an event, or <type 50 \"type out text.\">\n\n[[Go back|Macros]]",
+      "links": [
+        {
+          "name": "Go back|Macros",
+          "link": "Go back|Macros",
+          "broken": true
+        }
+      ],
+      "name": "Custom",
+      "pid": "9",
+      "position": {
+        "x": "900",
+        "y": "1050"
+      }
+    },
+    {
+      "text": "Thank you for trying out the Trellis example game!\n<sleep 2000>\n<exit>",
+      "name": "Exit",
+      "pid": "10",
+      "position": {
+        "x": "1025",
+        "y": "1025"
+      }
+    }
+  ],
+  "name": "TrellisExampleStory",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.11.0",
+  "ifid": "EA5995E2-9A22-4B46-BFC1-9EEBC5C1797B"
+}
+
