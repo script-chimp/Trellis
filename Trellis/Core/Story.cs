@@ -31,5 +31,7 @@ namespace Trellis.Core
         internal Passage? GetPassage(string passageName) => StoryData.GetValueOrDefault(passageName);
 
         internal bool PassageExists(string passageName) => StoryData.ContainsKey(passageName);
+
+        internal List<Passage> Passages() => StoryData.Values.ToList();
     }
 }
