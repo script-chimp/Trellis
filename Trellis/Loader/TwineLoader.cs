@@ -69,6 +69,7 @@ namespace Trellis.Loader
                 // Mack Rowe
                 //Console.WriteLine($"Match index = {match.Index}, length: {match.Length}");
                 string macroChunk = passageText.Substring(match.Index + 1, match.Length - 2);
+                Console.WriteLine(macroChunk);
                 var macroTokens = Tokenizer.Tokenize(macroChunk);
                 var macroName = macroTokens.First();
                 var macroValues = macroTokens.Skip(1).ToArray();

@@ -28,7 +28,7 @@ namespace Trellis.Engine
 
         public Passage GetCurrentPassage() => Nav.GetCurrentPassage();
 
-
+        
         public PassageStep GetCurrentStep() => Nav.GetCurrentStep();
         public bool Step() => Nav.NextStep();
         public bool IsFirstStep() => Nav.IsFirstStep();
@@ -39,12 +39,5 @@ namespace Trellis.Engine
 
         public List<PassageLink> GetPassageLinks() => GetCurrentPassage().Links.ToList();
 
-        public bool TryGetPassage(string passageName, out Passage? passage)
-        {
-            passage = storyData.GetPassage(passageName);
-            return passage != null;
-        }
-
-        public List<Passage> Passages() => storyData.Passages();
     }
 }
