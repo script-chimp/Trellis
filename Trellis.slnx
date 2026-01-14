@@ -4,4 +4,5 @@
   </Folder>
   <Project Path="ExampleTrellisGame/ExampleTrellisGame.csproj" />
   <Project Path="Trellis/Trellis.csproj" />
+  <Project Path="TrellisDebugger/TrellisDebugger.csproj" Id="4f72b9da-2454-4c9c-80c1-5fd29233d2ba" />
 </Solution>
