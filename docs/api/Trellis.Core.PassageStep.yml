@@ -1,0 +1,473 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trellis.Core.PassageStep
+  commentId: T:Trellis.Core.PassageStep
+  id: PassageStep
+  parent: Trellis.Core
+  children:
+  - Trellis.Core.PassageStep.#ctor(Trellis.Core.PassageStepType,System.Object)
+  - Trellis.Core.PassageStep.StepType
+  - Trellis.Core.PassageStep.Value
+  langs:
+  - csharp
+  - vb
+  name: PassageStep
+  nameWithType: PassageStep
+  fullName: Trellis.Core.PassageStep
+  type: Class
+  source:
+    remote:
+      path: Trellis/Core/PassageStep.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: PassageStep
+    path: ../Trellis/Core/PassageStep.cs
+    startLine: 17
+  assemblies:
+  - Trellis
+  namespace: Trellis.Core
+  summary: Represents a single step in a passage, including its type and associated value.
+  example: []
+  syntax:
+    content: 'public sealed record PassageStep : IEquatable<PassageStep>'
+    content.vb: Public NotInheritable Class PassageStep Implements IEquatable(Of PassageStep)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Trellis.Core.PassageStep}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Trellis.Core.PassageStep.#ctor(Trellis.Core.PassageStepType,System.Object)
+  commentId: M:Trellis.Core.PassageStep.#ctor(Trellis.Core.PassageStepType,System.Object)
+  id: '#ctor(Trellis.Core.PassageStepType,System.Object)'
+  parent: Trellis.Core.PassageStep
+  langs:
+  - csharp
+  - vb
+  name: PassageStep(PassageStepType, object?)
+  nameWithType: PassageStep.PassageStep(PassageStepType, object?)
+  fullName: Trellis.Core.PassageStep.PassageStep(Trellis.Core.PassageStepType, object?)
+  type: Constructor
+  source:
+    remote:
+      path: Trellis/Core/PassageStep.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: .ctor
+    path: ../Trellis/Core/PassageStep.cs
+    startLine: 17
+  assemblies:
+  - Trellis
+  namespace: Trellis.Core
+  summary: Represents a single step in a passage, including its type and associated value.
+  example: []
+  syntax:
+    content: public PassageStep(PassageStepType StepType, object? Value)
+    parameters:
+    - id: StepType
+      type: Trellis.Core.PassageStepType
+      description: The type of the passage step, indicating the action or category of this step.
+    - id: Value
+      type: System.Object
+      description: >-
+        The value associated with the step. The expected type and meaning depend on the specified step type. May be null
+            if the step does not require an associated value.
+    content.vb: Public Sub New(StepType As PassageStepType, Value As Object)
+  overload: Trellis.Core.PassageStep.#ctor*
+  nameWithType.vb: PassageStep.New(PassageStepType, Object)
+  fullName.vb: Trellis.Core.PassageStep.New(Trellis.Core.PassageStepType, Object)
+  name.vb: New(PassageStepType, Object)
+- uid: Trellis.Core.PassageStep.StepType
+  commentId: P:Trellis.Core.PassageStep.StepType
+  id: StepType
+  parent: Trellis.Core.PassageStep
+  langs:
+  - csharp
+  - vb
+  name: StepType
+  nameWithType: PassageStep.StepType
+  fullName: Trellis.Core.PassageStep.StepType
+  type: Property
+  source:
+    remote:
+      path: Trellis/Core/PassageStep.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: StepType
+    path: ../Trellis/Core/PassageStep.cs
+    startLine: 19
+  assemblies:
+  - Trellis
+  namespace: Trellis.Core
+  summary: The type of the passage step, indicating the action or category of this step.
+  example: []
+  syntax:
+    content: public PassageStepType StepType { get; init; }
+    parameters: []
+    return:
+      type: Trellis.Core.PassageStepType
+    content.vb: Public Property StepType As PassageStepType
+  overload: Trellis.Core.PassageStep.StepType*
+- uid: Trellis.Core.PassageStep.Value
+  commentId: P:Trellis.Core.PassageStep.Value
+  id: Value
+  parent: Trellis.Core.PassageStep
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: PassageStep.Value
+  fullName: Trellis.Core.PassageStep.Value
+  type: Property
+  source:
+    remote:
+      path: Trellis/Core/PassageStep.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: Value
+    path: ../Trellis/Core/PassageStep.cs
+    startLine: 20
+  assemblies:
+  - Trellis
+  namespace: Trellis.Core
+  summary: >-
+    The value associated with the step. The expected type and meaning depend on the specified step type. May be null
+        if the step does not require an associated value.
+  example: []
+  syntax:
+    content: public object? Value { get; init; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property Value As Object
+  overload: Trellis.Core.PassageStep.Value*
+references:
+- uid: Trellis.Core
+  commentId: N:Trellis.Core
+  href: Trellis.html
+  name: Trellis.Core
+  nameWithType: Trellis.Core
+  fullName: Trellis.Core
+  spec.csharp:
+  - uid: Trellis
+    name: Trellis
+    href: Trellis.html
+  - name: .
+  - uid: Trellis.Core
+    name: Core
+    href: Trellis.Core.html
+  spec.vb:
+  - uid: Trellis
+    name: Trellis
+    href: Trellis.html
+  - name: .
+  - uid: Trellis.Core
+    name: Core
+    href: Trellis.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{Trellis.Core.PassageStep}
+  commentId: T:System.IEquatable{Trellis.Core.PassageStep}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PassageStep>
+  nameWithType: IEquatable<PassageStep>
+  fullName: System.IEquatable<Trellis.Core.PassageStep>
+  nameWithType.vb: IEquatable(Of PassageStep)
+  fullName.vb: System.IEquatable(Of Trellis.Core.PassageStep)
+  name.vb: IEquatable(Of PassageStep)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Trellis.Core.PassageStep
+    name: PassageStep
+    href: Trellis.Core.PassageStep.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Trellis.Core.PassageStep
+    name: PassageStep
+    href: Trellis.Core.PassageStep.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Trellis.Core.PassageStep.#ctor*
+  commentId: Overload:Trellis.Core.PassageStep.#ctor
+  href: Trellis.Core.PassageStep.html#Trellis_Core_PassageStep__ctor_Trellis_Core_PassageStepType_System_Object_
+  name: PassageStep
+  nameWithType: PassageStep.PassageStep
+  fullName: Trellis.Core.PassageStep.PassageStep
+  nameWithType.vb: PassageStep.New
+  fullName.vb: Trellis.Core.PassageStep.New
+  name.vb: New
+- uid: Trellis.Core.PassageStepType
+  commentId: T:Trellis.Core.PassageStepType
+  parent: Trellis.Core
+  href: Trellis.Core.PassageStepType.html
+  name: PassageStepType
+  nameWithType: PassageStepType
+  fullName: Trellis.Core.PassageStepType
+- uid: Trellis.Core.PassageStep.StepType*
+  commentId: Overload:Trellis.Core.PassageStep.StepType
+  href: Trellis.Core.PassageStep.html#Trellis_Core_PassageStep_StepType
+  name: StepType
+  nameWithType: PassageStep.StepType
+  fullName: Trellis.Core.PassageStep.StepType
+- uid: Trellis.Core.PassageStep.Value*
+  commentId: Overload:Trellis.Core.PassageStep.Value
+  href: Trellis.Core.PassageStep.html#Trellis_Core_PassageStep_Value
+  name: Value
+  nameWithType: PassageStep.Value
+  fullName: Trellis.Core.PassageStep.Value

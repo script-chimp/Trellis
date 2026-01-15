@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trellis.Loader
+  commentId: N:Trellis.Loader
+  id: Trellis.Loader
+  children:
+  - Trellis.Loader.TwineLinkDto
+  - Trellis.Loader.TwinePassageDto
+  - Trellis.Loader.TwineStoryDto
+  langs:
+  - csharp
+  - vb
+  name: Trellis.Loader
+  nameWithType: Trellis.Loader
+  fullName: Trellis.Loader
+  type: Namespace
+  assemblies:
+  - Trellis
+references:
+- uid: Trellis.Loader.TwineLinkDto
+  commentId: T:Trellis.Loader.TwineLinkDto
+  href: Trellis.Loader.TwineLinkDto.html
+  name: TwineLinkDto
+  nameWithType: TwineLinkDto
+  fullName: Trellis.Loader.TwineLinkDto
+- uid: Trellis.Loader.TwinePassageDto
+  commentId: T:Trellis.Loader.TwinePassageDto
+  href: Trellis.Loader.TwinePassageDto.html
+  name: TwinePassageDto
+  nameWithType: TwinePassageDto
+  fullName: Trellis.Loader.TwinePassageDto
+- uid: Trellis.Loader.TwineStoryDto
+  commentId: T:Trellis.Loader.TwineStoryDto
+  href: Trellis.Loader.TwineStoryDto.html
+  name: TwineStoryDto
+  nameWithType: TwineStoryDto
+  fullName: Trellis.Loader.TwineStoryDto

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trellis.Text
+  commentId: N:Trellis.Text
+  id: Trellis.Text
+  children:
+  - Trellis.Text.Tokenizer
+  langs:
+  - csharp
+  - vb
+  name: Trellis.Text
+  nameWithType: Trellis.Text
+  fullName: Trellis.Text
+  type: Namespace
+  assemblies:
+  - Trellis
+references:
+- uid: Trellis.Text.Tokenizer
+  commentId: T:Trellis.Text.Tokenizer
+  href: Trellis.Text.Tokenizer.html
+  name: Tokenizer
+  nameWithType: Tokenizer
+  fullName: Trellis.Text.Tokenizer

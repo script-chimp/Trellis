@@ -1,0 +1,83 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trellis.Core
+  commentId: N:Trellis.Core
+  id: Trellis.Core
+  children:
+  - Trellis.Core.Item
+  - Trellis.Core.Passage
+  - Trellis.Core.PassageLink
+  - Trellis.Core.PassageStep
+  - Trellis.Core.PassageStepType
+  - Trellis.Core.TrellisMacro
+  langs:
+  - csharp
+  - vb
+  name: Trellis.Core
+  nameWithType: Trellis.Core
+  fullName: Trellis.Core
+  type: Namespace
+  assemblies:
+  - Trellis
+references:
+- uid: Trellis.Core.Item
+  commentId: T:Trellis.Core.Item
+  href: Trellis.Core.Item.html
+  name: Item
+  nameWithType: Item
+  fullName: Trellis.Core.Item
+- uid: Trellis.Core.Passage
+  commentId: T:Trellis.Core.Passage
+  parent: Trellis.Core
+  href: Trellis.Core.Passage.html
+  name: Passage
+  nameWithType: Passage
+  fullName: Trellis.Core.Passage
+- uid: Trellis.Core.PassageLink
+  commentId: T:Trellis.Core.PassageLink
+  href: Trellis.Core.PassageLink.html
+  name: PassageLink
+  nameWithType: PassageLink
+  fullName: Trellis.Core.PassageLink
+- uid: Trellis.Core.PassageStepType
+  commentId: T:Trellis.Core.PassageStepType
+  parent: Trellis.Core
+  href: Trellis.Core.PassageStepType.html
+  name: PassageStepType
+  nameWithType: PassageStepType
+  fullName: Trellis.Core.PassageStepType
+- uid: Trellis.Core.PassageStep
+  commentId: T:Trellis.Core.PassageStep
+  parent: Trellis.Core
+  href: Trellis.Core.PassageStep.html
+  name: PassageStep
+  nameWithType: PassageStep
+  fullName: Trellis.Core.PassageStep
+- uid: Trellis.Core.TrellisMacro
+  commentId: T:Trellis.Core.TrellisMacro
+  href: Trellis.Core.TrellisMacro.html
+  name: TrellisMacro
+  nameWithType: TrellisMacro
+  fullName: Trellis.Core.TrellisMacro
+- uid: Trellis.Core
+  commentId: N:Trellis.Core
+  href: Trellis.html
+  name: Trellis.Core
+  nameWithType: Trellis.Core
+  fullName: Trellis.Core
+  spec.csharp:
+  - uid: Trellis
+    name: Trellis
+    href: Trellis.html
+  - name: .
+  - uid: Trellis.Core
+    name: Core
+    href: Trellis.Core.html
+  spec.vb:
+  - uid: Trellis
+    name: Trellis
+    href: Trellis.html
+  - name: .
+  - uid: Trellis.Core
+    name: Core
+    href: Trellis.Core.html

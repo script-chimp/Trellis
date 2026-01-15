@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trellis.Engine
+  commentId: N:Trellis.Engine
+  id: Trellis.Engine
+  children:
+  - Trellis.Engine.TrellisEngine
+  langs:
+  - csharp
+  - vb
+  name: Trellis.Engine
+  nameWithType: Trellis.Engine
+  fullName: Trellis.Engine
+  type: Namespace
+  assemblies:
+  - Trellis
+references:
+- uid: Trellis.Engine.TrellisEngine
+  commentId: T:Trellis.Engine.TrellisEngine
+  href: Trellis.Engine.TrellisEngine.html
+  name: TrellisEngine
+  nameWithType: TrellisEngine
+  fullName: Trellis.Engine.TrellisEngine

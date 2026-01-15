@@ -1,0 +1,512 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trellis.Loader.TwineLinkDto
+  commentId: T:Trellis.Loader.TwineLinkDto
+  id: TwineLinkDto
+  parent: Trellis.Loader
+  children:
+  - Trellis.Loader.TwineLinkDto.#ctor(System.String,System.String,System.Boolean)
+  - Trellis.Loader.TwineLinkDto.broken
+  - Trellis.Loader.TwineLinkDto.name
+  - Trellis.Loader.TwineLinkDto.text
+  langs:
+  - csharp
+  - vb
+  name: TwineLinkDto
+  nameWithType: TwineLinkDto
+  fullName: Trellis.Loader.TwineLinkDto
+  type: Class
+  source:
+    remote:
+      path: Trellis/Loader/TwineLinkDto.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: TwineLinkDto
+    path: ../Trellis/Loader/TwineLinkDto.cs
+    startLine: 8
+  assemblies:
+  - Trellis
+  namespace: Trellis.Loader
+  syntax:
+    content: 'public sealed record TwineLinkDto : IEquatable<TwineLinkDto>'
+    content.vb: Public NotInheritable Class TwineLinkDto Implements IEquatable(Of TwineLinkDto)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Trellis.Loader.TwineLinkDto}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Trellis.Loader.TwineLinkDto.#ctor(System.String,System.String,System.Boolean)
+  commentId: M:Trellis.Loader.TwineLinkDto.#ctor(System.String,System.String,System.Boolean)
+  id: '#ctor(System.String,System.String,System.Boolean)'
+  parent: Trellis.Loader.TwineLinkDto
+  langs:
+  - csharp
+  - vb
+  name: TwineLinkDto(string, string, bool)
+  nameWithType: TwineLinkDto.TwineLinkDto(string, string, bool)
+  fullName: Trellis.Loader.TwineLinkDto.TwineLinkDto(string, string, bool)
+  type: Constructor
+  source:
+    remote:
+      path: Trellis/Loader/TwineLinkDto.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: .ctor
+    path: ../Trellis/Loader/TwineLinkDto.cs
+    startLine: 8
+  assemblies:
+  - Trellis
+  namespace: Trellis.Loader
+  syntax:
+    content: public TwineLinkDto(string name, string text, bool broken = false)
+    parameters:
+    - id: name
+      type: System.String
+    - id: text
+      type: System.String
+    - id: broken
+      type: System.Boolean
+    content.vb: Public Sub New(name As String, text As String, broken As Boolean = False)
+  overload: Trellis.Loader.TwineLinkDto.#ctor*
+  nameWithType.vb: TwineLinkDto.New(String, String, Boolean)
+  fullName.vb: Trellis.Loader.TwineLinkDto.New(String, String, Boolean)
+  name.vb: New(String, String, Boolean)
+- uid: Trellis.Loader.TwineLinkDto.name
+  commentId: P:Trellis.Loader.TwineLinkDto.name
+  id: name
+  parent: Trellis.Loader.TwineLinkDto
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: TwineLinkDto.name
+  fullName: Trellis.Loader.TwineLinkDto.name
+  type: Property
+  source:
+    remote:
+      path: Trellis/Loader/TwineLinkDto.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: name
+    path: ../Trellis/Loader/TwineLinkDto.cs
+    startLine: 10
+  assemblies:
+  - Trellis
+  namespace: Trellis.Loader
+  syntax:
+    content: public string name { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property name As String
+  overload: Trellis.Loader.TwineLinkDto.name*
+- uid: Trellis.Loader.TwineLinkDto.text
+  commentId: P:Trellis.Loader.TwineLinkDto.text
+  id: text
+  parent: Trellis.Loader.TwineLinkDto
+  langs:
+  - csharp
+  - vb
+  name: text
+  nameWithType: TwineLinkDto.text
+  fullName: Trellis.Loader.TwineLinkDto.text
+  type: Property
+  source:
+    remote:
+      path: Trellis/Loader/TwineLinkDto.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: text
+    path: ../Trellis/Loader/TwineLinkDto.cs
+    startLine: 11
+  assemblies:
+  - Trellis
+  namespace: Trellis.Loader
+  syntax:
+    content: public string text { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property text As String
+  overload: Trellis.Loader.TwineLinkDto.text*
+- uid: Trellis.Loader.TwineLinkDto.broken
+  commentId: P:Trellis.Loader.TwineLinkDto.broken
+  id: broken
+  parent: Trellis.Loader.TwineLinkDto
+  langs:
+  - csharp
+  - vb
+  name: broken
+  nameWithType: TwineLinkDto.broken
+  fullName: Trellis.Loader.TwineLinkDto.broken
+  type: Property
+  source:
+    remote:
+      path: Trellis/Loader/TwineLinkDto.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: broken
+    path: ../Trellis/Loader/TwineLinkDto.cs
+    startLine: 12
+  assemblies:
+  - Trellis
+  namespace: Trellis.Loader
+  syntax:
+    content: public bool broken { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property broken As Boolean
+  overload: Trellis.Loader.TwineLinkDto.broken*
+references:
+- uid: Trellis.Loader
+  commentId: N:Trellis.Loader
+  href: Trellis.html
+  name: Trellis.Loader
+  nameWithType: Trellis.Loader
+  fullName: Trellis.Loader
+  spec.csharp:
+  - uid: Trellis
+    name: Trellis
+    href: Trellis.html
+  - name: .
+  - uid: Trellis.Loader
+    name: Loader
+    href: Trellis.Loader.html
+  spec.vb:
+  - uid: Trellis
+    name: Trellis
+    href: Trellis.html
+  - name: .
+  - uid: Trellis.Loader
+    name: Loader
+    href: Trellis.Loader.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{Trellis.Loader.TwineLinkDto}
+  commentId: T:System.IEquatable{Trellis.Loader.TwineLinkDto}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TwineLinkDto>
+  nameWithType: IEquatable<TwineLinkDto>
+  fullName: System.IEquatable<Trellis.Loader.TwineLinkDto>
+  nameWithType.vb: IEquatable(Of TwineLinkDto)
+  fullName.vb: System.IEquatable(Of Trellis.Loader.TwineLinkDto)
+  name.vb: IEquatable(Of TwineLinkDto)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Trellis.Loader.TwineLinkDto
+    name: TwineLinkDto
+    href: Trellis.Loader.TwineLinkDto.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Trellis.Loader.TwineLinkDto
+    name: TwineLinkDto
+    href: Trellis.Loader.TwineLinkDto.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Trellis.Loader.TwineLinkDto.#ctor*
+  commentId: Overload:Trellis.Loader.TwineLinkDto.#ctor
+  href: Trellis.Loader.TwineLinkDto.html#Trellis_Loader_TwineLinkDto__ctor_System_String_System_String_System_Boolean_
+  name: TwineLinkDto
+  nameWithType: TwineLinkDto.TwineLinkDto
+  fullName: Trellis.Loader.TwineLinkDto.TwineLinkDto
+  nameWithType.vb: TwineLinkDto.New
+  fullName.vb: Trellis.Loader.TwineLinkDto.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Trellis.Loader.TwineLinkDto.name*
+  commentId: Overload:Trellis.Loader.TwineLinkDto.name
+  href: Trellis.Loader.TwineLinkDto.html#Trellis_Loader_TwineLinkDto_name
+  name: name
+  nameWithType: TwineLinkDto.name
+  fullName: Trellis.Loader.TwineLinkDto.name
+- uid: Trellis.Loader.TwineLinkDto.text*
+  commentId: Overload:Trellis.Loader.TwineLinkDto.text
+  href: Trellis.Loader.TwineLinkDto.html#Trellis_Loader_TwineLinkDto_text
+  name: text
+  nameWithType: TwineLinkDto.text
+  fullName: Trellis.Loader.TwineLinkDto.text
+- uid: Trellis.Loader.TwineLinkDto.broken*
+  commentId: Overload:Trellis.Loader.TwineLinkDto.broken
+  href: Trellis.Loader.TwineLinkDto.html#Trellis_Loader_TwineLinkDto_broken
+  name: broken
+  nameWithType: TwineLinkDto.broken
+  fullName: Trellis.Loader.TwineLinkDto.broken

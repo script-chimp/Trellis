@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trellis.Core.PassageStepType
+  commentId: T:Trellis.Core.PassageStepType
+  id: PassageStepType
+  parent: Trellis.Core
+  children:
+  - Trellis.Core.PassageStepType.display
+  - Trellis.Core.PassageStepType.macro
+  langs:
+  - csharp
+  - vb
+  name: PassageStepType
+  nameWithType: PassageStepType
+  fullName: Trellis.Core.PassageStepType
+  type: Enum
+  source:
+    remote:
+      path: Trellis/Core/PassageStep.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: PassageStepType
+    path: ../Trellis/Core/PassageStep.cs
+    startLine: 5
+  assemblies:
+  - Trellis
+  namespace: Trellis.Core
+  summary: Specifies the type of step within a passage, such as displaying content or executing a macro.
+  example: []
+  syntax:
+    content: public enum PassageStepType
+    content.vb: Public Enum PassageStepType
+- uid: Trellis.Core.PassageStepType.display
+  commentId: F:Trellis.Core.PassageStepType.display
+  id: display
+  parent: Trellis.Core.PassageStepType
+  langs:
+  - csharp
+  - vb
+  name: display
+  nameWithType: PassageStepType.display
+  fullName: Trellis.Core.PassageStepType.display
+  type: Field
+  source:
+    remote:
+      path: Trellis/Core/PassageStep.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: display
+    path: ../Trellis/Core/PassageStep.cs
+    startLine: 7
+  assemblies:
+  - Trellis
+  namespace: Trellis.Core
+  syntax:
+    content: display = 0
+    return:
+      type: Trellis.Core.PassageStepType
+- uid: Trellis.Core.PassageStepType.macro
+  commentId: F:Trellis.Core.PassageStepType.macro
+  id: macro
+  parent: Trellis.Core.PassageStepType
+  langs:
+  - csharp
+  - vb
+  name: macro
+  nameWithType: PassageStepType.macro
+  fullName: Trellis.Core.PassageStepType.macro
+  type: Field
+  source:
+    remote:
+      path: Trellis/Core/PassageStep.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: macro
+    path: ../Trellis/Core/PassageStep.cs
+    startLine: 8
+  assemblies:
+  - Trellis
+  namespace: Trellis.Core
+  syntax:
+    content: macro = 1
+    return:
+      type: Trellis.Core.PassageStepType
+references:
+- uid: Trellis.Core
+  commentId: N:Trellis.Core
+  href: Trellis.html
+  name: Trellis.Core
+  nameWithType: Trellis.Core
+  fullName: Trellis.Core
+  spec.csharp:
+  - uid: Trellis
+    name: Trellis
+    href: Trellis.html
+  - name: .
+  - uid: Trellis.Core
+    name: Core
+    href: Trellis.Core.html
+  spec.vb:
+  - uid: Trellis
+    name: Trellis
+    href: Trellis.html
+  - name: .
+  - uid: Trellis.Core
+    name: Core
+    href: Trellis.Core.html
+- uid: Trellis.Core.PassageStepType
+  commentId: T:Trellis.Core.PassageStepType
+  parent: Trellis.Core
+  href: Trellis.Core.PassageStepType.html
+  name: PassageStepType
+  nameWithType: PassageStepType
+  fullName: Trellis.Core.PassageStepType

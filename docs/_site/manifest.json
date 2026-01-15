@@ -1,0 +1,326 @@
+{
+  "source_base_path": "C:/Users/BrawnSwagger/source/repos/Trellis/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Core.Item.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Core.Item.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Core.Item",
+      "Summary": "<p sourcefile=\"api/Trellis.Core.Item.yml\" sourcestartlinenumber=\"1\">Represents an immutable item with an identifier, name, and description.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Core.Passage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Core.Passage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Core.Passage",
+      "Summary": "<p sourcefile=\"api/Trellis.Core.Passage.yml\" sourcestartlinenumber=\"1\">Represents a named sequence of steps and associated links within a passage-based workflow or narrative.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Core.PassageLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Core.PassageLink.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Core.PassageLink",
+      "Summary": "<p sourcefile=\"api/Trellis.Core.PassageLink.yml\" sourcestartlinenumber=\"1\">Represents a hyperlink to a passage, including its display name, link text, and an indicator of whether the link is\nbroken.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Core.PassageStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Core.PassageStep.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Core.PassageStep",
+      "Summary": "<p sourcefile=\"api/Trellis.Core.PassageStep.yml\" sourcestartlinenumber=\"1\">Represents a single step in a passage, including its type and associated value.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Core.PassageStepType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Core.PassageStepType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Core.PassageStepType",
+      "Summary": "<p sourcefile=\"api/Trellis.Core.PassageStepType.yml\" sourcestartlinenumber=\"1\">Specifies the type of step within a passage, such as displaying content or executing a macro.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Core.TrellisMacro.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Core.TrellisMacro.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Core.TrellisMacro",
+      "Summary": "<p sourcefile=\"api/Trellis.Core.TrellisMacro.yml\" sourcestartlinenumber=\"1\">Represents a macro within the Trellis interactive storytelling framework, including its type and associated arguments.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Core.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Core",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Engine.TrellisEngine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Engine.TrellisEngine.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Engine.TrellisEngine",
+      "Summary": "<p sourcefile=\"api/Trellis.Engine.TrellisEngine.yml\" sourcestartlinenumber=\"1\"><code>TrellisEngine</code> is the main class responsible for managing the state and progression of an interactive story.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Engine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Engine.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Engine",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Loader.TwineLinkDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Loader.TwineLinkDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Loader.TwineLinkDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Loader.TwinePassageDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Loader.TwinePassageDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Loader.TwinePassageDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Loader.TwineStoryDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Loader.TwineStoryDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Loader.TwineStoryDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Loader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Loader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Loader",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Test.FileTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Test.FileTest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Test.FileTest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Test.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Test",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Text.Tokenizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Text.Tokenizer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Text.Tokenizer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Trellis.Text.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Trellis.Text.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Trellis.Text",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

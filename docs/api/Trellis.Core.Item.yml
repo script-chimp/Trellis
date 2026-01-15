@@ -1,0 +1,514 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trellis.Core.Item
+  commentId: T:Trellis.Core.Item
+  id: Item
+  parent: Trellis.Core
+  children:
+  - Trellis.Core.Item.#ctor(System.String,System.String,System.String)
+  - Trellis.Core.Item.Description
+  - Trellis.Core.Item.Id
+  - Trellis.Core.Item.Name
+  langs:
+  - csharp
+  - vb
+  name: Item
+  nameWithType: Item
+  fullName: Trellis.Core.Item
+  type: Class
+  source:
+    remote:
+      path: Trellis/Core/Item.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: Item
+    path: ../Trellis/Core/Item.cs
+    startLine: 8
+  assemblies:
+  - Trellis
+  namespace: Trellis.Core
+  summary: Represents an immutable item with an identifier, name, and description.
+  example: []
+  syntax:
+    content: 'public sealed record Item : IEquatable<Item>'
+    content.vb: Public NotInheritable Class Item Implements IEquatable(Of Item)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Trellis.Core.Item}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Trellis.Core.Item.#ctor(System.String,System.String,System.String)
+  commentId: M:Trellis.Core.Item.#ctor(System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String)'
+  parent: Trellis.Core.Item
+  langs:
+  - csharp
+  - vb
+  name: Item(string, string, string)
+  nameWithType: Item.Item(string, string, string)
+  fullName: Trellis.Core.Item.Item(string, string, string)
+  type: Constructor
+  source:
+    remote:
+      path: Trellis/Core/Item.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: .ctor
+    path: ../Trellis/Core/Item.cs
+    startLine: 8
+  assemblies:
+  - Trellis
+  namespace: Trellis.Core
+  summary: Represents an immutable item with an identifier, name, and description.
+  example: []
+  syntax:
+    content: public Item(string Id, string Name, string Description)
+    parameters:
+    - id: Id
+      type: System.String
+      description: The unique identifier for the item. Cannot be null.
+    - id: Name
+      type: System.String
+      description: The display name of the item. Cannot be null.
+    - id: Description
+      type: System.String
+      description: A textual description of the item. Cannot be null.
+    content.vb: Public Sub New(Id As String, Name As String, Description As String)
+  overload: Trellis.Core.Item.#ctor*
+  nameWithType.vb: Item.New(String, String, String)
+  fullName.vb: Trellis.Core.Item.New(String, String, String)
+  name.vb: New(String, String, String)
+- uid: Trellis.Core.Item.Id
+  commentId: P:Trellis.Core.Item.Id
+  id: Id
+  parent: Trellis.Core.Item
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Item.Id
+  fullName: Trellis.Core.Item.Id
+  type: Property
+  source:
+    remote:
+      path: Trellis/Core/Item.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: Id
+    path: ../Trellis/Core/Item.cs
+    startLine: 10
+  assemblies:
+  - Trellis
+  namespace: Trellis.Core
+  summary: The unique identifier for the item. Cannot be null.
+  example: []
+  syntax:
+    content: public string Id { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Trellis.Core.Item.Id*
+- uid: Trellis.Core.Item.Name
+  commentId: P:Trellis.Core.Item.Name
+  id: Name
+  parent: Trellis.Core.Item
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Item.Name
+  fullName: Trellis.Core.Item.Name
+  type: Property
+  source:
+    remote:
+      path: Trellis/Core/Item.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: Name
+    path: ../Trellis/Core/Item.cs
+    startLine: 11
+  assemblies:
+  - Trellis
+  namespace: Trellis.Core
+  summary: The display name of the item. Cannot be null.
+  example: []
+  syntax:
+    content: public string Name { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Trellis.Core.Item.Name*
+- uid: Trellis.Core.Item.Description
+  commentId: P:Trellis.Core.Item.Description
+  id: Description
+  parent: Trellis.Core.Item
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: Item.Description
+  fullName: Trellis.Core.Item.Description
+  type: Property
+  source:
+    remote:
+      path: Trellis/Core/Item.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: Description
+    path: ../Trellis/Core/Item.cs
+    startLine: 12
+  assemblies:
+  - Trellis
+  namespace: Trellis.Core
+  summary: A textual description of the item. Cannot be null.
+  example: []
+  syntax:
+    content: public string Description { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Trellis.Core.Item.Description*
+references:
+- uid: Trellis.Core
+  commentId: N:Trellis.Core
+  href: Trellis.html
+  name: Trellis.Core
+  nameWithType: Trellis.Core
+  fullName: Trellis.Core
+  spec.csharp:
+  - uid: Trellis
+    name: Trellis
+    href: Trellis.html
+  - name: .
+  - uid: Trellis.Core
+    name: Core
+    href: Trellis.Core.html
+  spec.vb:
+  - uid: Trellis
+    name: Trellis
+    href: Trellis.html
+  - name: .
+  - uid: Trellis.Core
+    name: Core
+    href: Trellis.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{Trellis.Core.Item}
+  commentId: T:System.IEquatable{Trellis.Core.Item}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Item>
+  nameWithType: IEquatable<Item>
+  fullName: System.IEquatable<Trellis.Core.Item>
+  nameWithType.vb: IEquatable(Of Item)
+  fullName.vb: System.IEquatable(Of Trellis.Core.Item)
+  name.vb: IEquatable(Of Item)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Trellis.Core.Item
+    name: Item
+    href: Trellis.Core.Item.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Trellis.Core.Item
+    name: Item
+    href: Trellis.Core.Item.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Trellis.Core.Item.#ctor*
+  commentId: Overload:Trellis.Core.Item.#ctor
+  href: Trellis.Core.Item.html#Trellis_Core_Item__ctor_System_String_System_String_System_String_
+  name: Item
+  nameWithType: Item.Item
+  fullName: Trellis.Core.Item.Item
+  nameWithType.vb: Item.New
+  fullName.vb: Trellis.Core.Item.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Trellis.Core.Item.Id*
+  commentId: Overload:Trellis.Core.Item.Id
+  href: Trellis.Core.Item.html#Trellis_Core_Item_Id
+  name: Id
+  nameWithType: Item.Id
+  fullName: Trellis.Core.Item.Id
+- uid: Trellis.Core.Item.Name*
+  commentId: Overload:Trellis.Core.Item.Name
+  href: Trellis.Core.Item.html#Trellis_Core_Item_Name
+  name: Name
+  nameWithType: Item.Name
+  fullName: Trellis.Core.Item.Name
+- uid: Trellis.Core.Item.Description*
+  commentId: Overload:Trellis.Core.Item.Description
+  href: Trellis.Core.Item.html#Trellis_Core_Item_Description
+  name: Description
+  nameWithType: Item.Description
+  fullName: Trellis.Core.Item.Description

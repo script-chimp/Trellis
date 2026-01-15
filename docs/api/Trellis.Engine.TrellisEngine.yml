@@ -1,0 +1,889 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trellis.Engine.TrellisEngine
+  commentId: T:Trellis.Engine.TrellisEngine
+  id: TrellisEngine
+  parent: Trellis.Engine
+  children:
+  - Trellis.Engine.TrellisEngine.#ctor(System.String,System.String)
+  - Trellis.Engine.TrellisEngine.GetChoiceCount
+  - Trellis.Engine.TrellisEngine.GetCurrentPassage
+  - Trellis.Engine.TrellisEngine.GetCurrentStep
+  - Trellis.Engine.TrellisEngine.GetPassageLinks
+  - Trellis.Engine.TrellisEngine.IsFirstStep
+  - Trellis.Engine.TrellisEngine.IsLastStep
+  - Trellis.Engine.TrellisEngine.NavigateTo(System.String)
+  - Trellis.Engine.TrellisEngine.Reset
+  - Trellis.Engine.TrellisEngine.Step
+  langs:
+  - csharp
+  - vb
+  name: TrellisEngine
+  nameWithType: TrellisEngine
+  fullName: Trellis.Engine.TrellisEngine
+  type: Class
+  source:
+    remote:
+      path: Trellis/Engine/TrellisEngine.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: TrellisEngine
+    path: ../Trellis/Engine/TrellisEngine.cs
+    startLine: 8
+  assemblies:
+  - Trellis
+  namespace: Trellis.Engine
+  summary: <code>TrellisEngine</code> is the main class responsible for managing the state and progression of an interactive story.
+  example: []
+  syntax:
+    content: public class TrellisEngine
+    content.vb: Public Class TrellisEngine
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Trellis.Engine.TrellisEngine.#ctor(System.String,System.String)
+  commentId: M:Trellis.Engine.TrellisEngine.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Trellis.Engine.TrellisEngine
+  langs:
+  - csharp
+  - vb
+  name: TrellisEngine(string, string)
+  nameWithType: TrellisEngine.TrellisEngine(string, string)
+  fullName: Trellis.Engine.TrellisEngine.TrellisEngine(string, string)
+  type: Constructor
+  source:
+    remote:
+      path: Trellis/Engine/TrellisEngine.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: .ctor
+    path: ../Trellis/Engine/TrellisEngine.cs
+    startLine: 22
+  assemblies:
+  - Trellis
+  namespace: Trellis.Engine
+  summary: Initializes a new instance of the TrellisEngine class using the specified story data path and story type.
+  example: []
+  syntax:
+    content: public TrellisEngine(string storyDataPath, string storyType)
+    parameters:
+    - id: storyDataPath
+      type: System.String
+      description: >-
+        The file path to the story data to be loaded. This should point to a valid story data file compatible with the
+            specified story type.
+    - id: storyType
+      type: System.String
+      description: The type of story data to load. This determines how the story data is interpreted and processed.
+    content.vb: Public Sub New(storyDataPath As String, storyType As String)
+  overload: Trellis.Engine.TrellisEngine.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      Thrown if the story data cannot be loaded for the specified story type, or if the provided story data path or
+          type is invalid.
+  nameWithType.vb: TrellisEngine.New(String, String)
+  fullName.vb: Trellis.Engine.TrellisEngine.New(String, String)
+  name.vb: New(String, String)
+- uid: Trellis.Engine.TrellisEngine.Reset
+  commentId: M:Trellis.Engine.TrellisEngine.Reset
+  id: Reset
+  parent: Trellis.Engine.TrellisEngine
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: TrellisEngine.Reset()
+  fullName: Trellis.Engine.TrellisEngine.Reset()
+  type: Method
+  source:
+    remote:
+      path: Trellis/Engine/TrellisEngine.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: Reset
+    path: ../Trellis/Engine/TrellisEngine.cs
+    startLine: 37
+  assemblies:
+  - Trellis
+  namespace: Trellis.Engine
+  summary: Resets the state of the object to its initial conditions.
+  remarks: >-
+    Call this method to clear any navigation history and prepare the object for reuse. This is
+        typically used to reinitialize the object without creating a new instance.
+  example: []
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: Trellis.Engine.TrellisEngine.Reset*
+- uid: Trellis.Engine.TrellisEngine.GetCurrentPassage
+  commentId: M:Trellis.Engine.TrellisEngine.GetCurrentPassage
+  id: GetCurrentPassage
+  parent: Trellis.Engine.TrellisEngine
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentPassage()
+  nameWithType: TrellisEngine.GetCurrentPassage()
+  fullName: Trellis.Engine.TrellisEngine.GetCurrentPassage()
+  type: Method
+  source:
+    remote:
+      path: Trellis/Engine/TrellisEngine.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: GetCurrentPassage
+    path: ../Trellis/Engine/TrellisEngine.cs
+    startLine: 49
+  assemblies:
+  - Trellis
+  namespace: Trellis.Engine
+  summary: Gets the current passage in the navigation sequence.
+  example: []
+  syntax:
+    content: public Passage GetCurrentPassage()
+    return:
+      type: Trellis.Core.Passage
+      description: >-
+        The current <xref href="Trellis.Core.Passage" data-throw-if-not-resolved="false"></xref> instance representing the active passage. Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if
+            there is no current passage.
+    content.vb: Public Function GetCurrentPassage() As Passage
+  overload: Trellis.Engine.TrellisEngine.GetCurrentPassage*
+- uid: Trellis.Engine.TrellisEngine.GetCurrentStep
+  commentId: M:Trellis.Engine.TrellisEngine.GetCurrentStep
+  id: GetCurrentStep
+  parent: Trellis.Engine.TrellisEngine
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentStep()
+  nameWithType: TrellisEngine.GetCurrentStep()
+  fullName: Trellis.Engine.TrellisEngine.GetCurrentStep()
+  type: Method
+  source:
+    remote:
+      path: Trellis/Engine/TrellisEngine.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: GetCurrentStep
+    path: ../Trellis/Engine/TrellisEngine.cs
+    startLine: 56
+  assemblies:
+  - Trellis
+  namespace: Trellis.Engine
+  summary: Gets the current step in the navigation sequence.
+  example: []
+  syntax:
+    content: public PassageStep GetCurrentStep()
+    return:
+      type: Trellis.Core.PassageStep
+      description: The current <xref href="Trellis.Core.PassageStep" data-throw-if-not-resolved="false"></xref> representing the user's position in the navigation. Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if there is no current step.
+    content.vb: Public Function GetCurrentStep() As PassageStep
+  overload: Trellis.Engine.TrellisEngine.GetCurrentStep*
+- uid: Trellis.Engine.TrellisEngine.Step
+  commentId: M:Trellis.Engine.TrellisEngine.Step
+  id: Step
+  parent: Trellis.Engine.TrellisEngine
+  langs:
+  - csharp
+  - vb
+  name: Step()
+  nameWithType: TrellisEngine.Step()
+  fullName: Trellis.Engine.TrellisEngine.Step()
+  type: Method
+  source:
+    remote:
+      path: Trellis/Engine/TrellisEngine.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: Step
+    path: ../Trellis/Engine/TrellisEngine.cs
+    startLine: 62
+  assemblies:
+  - Trellis
+  namespace: Trellis.Engine
+  summary: Advances the navigation to the next step in the sequence.
+  example: []
+  syntax:
+    content: public bool Step()
+    return:
+      type: System.Boolean
+      description: true if the navigation successfully advanced to the next step; otherwise, false.
+    content.vb: Public Function [Step]() As Boolean
+  overload: Trellis.Engine.TrellisEngine.Step*
+- uid: Trellis.Engine.TrellisEngine.IsFirstStep
+  commentId: M:Trellis.Engine.TrellisEngine.IsFirstStep
+  id: IsFirstStep
+  parent: Trellis.Engine.TrellisEngine
+  langs:
+  - csharp
+  - vb
+  name: IsFirstStep()
+  nameWithType: TrellisEngine.IsFirstStep()
+  fullName: Trellis.Engine.TrellisEngine.IsFirstStep()
+  type: Method
+  source:
+    remote:
+      path: Trellis/Engine/TrellisEngine.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: IsFirstStep
+    path: ../Trellis/Engine/TrellisEngine.cs
+    startLine: 69
+  assemblies:
+  - Trellis
+  namespace: Trellis.Engine
+  summary: Determines whether the current navigation position is at the first step.
+  example: []
+  syntax:
+    content: public bool IsFirstStep()
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current step is the first in the navigation sequence; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function IsFirstStep() As Boolean
+  overload: Trellis.Engine.TrellisEngine.IsFirstStep*
+- uid: Trellis.Engine.TrellisEngine.IsLastStep
+  commentId: M:Trellis.Engine.TrellisEngine.IsLastStep
+  id: IsLastStep
+  parent: Trellis.Engine.TrellisEngine
+  langs:
+  - csharp
+  - vb
+  name: IsLastStep()
+  nameWithType: TrellisEngine.IsLastStep()
+  fullName: Trellis.Engine.TrellisEngine.IsLastStep()
+  type: Method
+  source:
+    remote:
+      path: Trellis/Engine/TrellisEngine.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: IsLastStep
+    path: ../Trellis/Engine/TrellisEngine.cs
+    startLine: 75
+  assemblies:
+  - Trellis
+  namespace: Trellis.Engine
+  summary: Determines whether the current step is the last step in the navigation sequence.
+  example: []
+  syntax:
+    content: public bool IsLastStep()
+    return:
+      type: System.Boolean
+      description: true if the current step is the last step; otherwise, false.
+    content.vb: Public Function IsLastStep() As Boolean
+  overload: Trellis.Engine.TrellisEngine.IsLastStep*
+- uid: Trellis.Engine.TrellisEngine.GetChoiceCount
+  commentId: M:Trellis.Engine.TrellisEngine.GetChoiceCount
+  id: GetChoiceCount
+  parent: Trellis.Engine.TrellisEngine
+  langs:
+  - csharp
+  - vb
+  name: GetChoiceCount()
+  nameWithType: TrellisEngine.GetChoiceCount()
+  fullName: Trellis.Engine.TrellisEngine.GetChoiceCount()
+  type: Method
+  source:
+    remote:
+      path: Trellis/Engine/TrellisEngine.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: GetChoiceCount
+    path: ../Trellis/Engine/TrellisEngine.cs
+    startLine: 81
+  assemblies:
+  - Trellis
+  namespace: Trellis.Engine
+  summary: Gets the number of available navigation choices.
+  example: []
+  syntax:
+    content: public int GetChoiceCount()
+    return:
+      type: System.Int32
+      description: The total number of navigation choices currently available. Returns 0 if no choices are present.
+    content.vb: Public Function GetChoiceCount() As Integer
+  overload: Trellis.Engine.TrellisEngine.GetChoiceCount*
+- uid: Trellis.Engine.TrellisEngine.NavigateTo(System.String)
+  commentId: M:Trellis.Engine.TrellisEngine.NavigateTo(System.String)
+  id: NavigateTo(System.String)
+  parent: Trellis.Engine.TrellisEngine
+  langs:
+  - csharp
+  - vb
+  name: NavigateTo(string)
+  nameWithType: TrellisEngine.NavigateTo(string)
+  fullName: Trellis.Engine.TrellisEngine.NavigateTo(string)
+  type: Method
+  source:
+    remote:
+      path: Trellis/Engine/TrellisEngine.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: NavigateTo
+    path: ../Trellis/Engine/TrellisEngine.cs
+    startLine: 88
+  assemblies:
+  - Trellis
+  namespace: Trellis.Engine
+  summary: Attempts to navigate to the passage with the specified name.
+  example: []
+  syntax:
+    content: public bool NavigateTo(string passageName)
+    parameters:
+    - id: passageName
+      type: System.String
+      description: The name of the passage to navigate to. Cannot be null or empty.
+    return:
+      type: System.Boolean
+      description: true if navigation to the specified passage was successful; otherwise, false.
+    content.vb: Public Function NavigateTo(passageName As String) As Boolean
+  overload: Trellis.Engine.TrellisEngine.NavigateTo*
+  nameWithType.vb: TrellisEngine.NavigateTo(String)
+  fullName.vb: Trellis.Engine.TrellisEngine.NavigateTo(String)
+  name.vb: NavigateTo(String)
+- uid: Trellis.Engine.TrellisEngine.GetPassageLinks
+  commentId: M:Trellis.Engine.TrellisEngine.GetPassageLinks
+  id: GetPassageLinks
+  parent: Trellis.Engine.TrellisEngine
+  langs:
+  - csharp
+  - vb
+  name: GetPassageLinks()
+  nameWithType: TrellisEngine.GetPassageLinks()
+  fullName: Trellis.Engine.TrellisEngine.GetPassageLinks()
+  type: Method
+  source:
+    remote:
+      path: Trellis/Engine/TrellisEngine.cs
+      branch: master
+      repo: https://github.com/script-chimp/Trellis.git
+    id: GetPassageLinks
+    path: ../Trellis/Engine/TrellisEngine.cs
+    startLine: 95
+  assemblies:
+  - Trellis
+  namespace: Trellis.Engine
+  summary: Retrieves a list of links associated with the current passage.
+  example: []
+  syntax:
+    content: public List<PassageLink> GetPassageLinks()
+    return:
+      type: System.Collections.Generic.List{Trellis.Core.PassageLink}
+      description: >-
+        A list of <xref href="Trellis.Core.PassageLink" data-throw-if-not-resolved="false"></xref> objects representing the available links in the current passage. The list
+            will be empty if the passage contains no links.
+    content.vb: Public Function GetPassageLinks() As List(Of PassageLink)
+  overload: Trellis.Engine.TrellisEngine.GetPassageLinks*
+references:
+- uid: Trellis.Engine
+  commentId: N:Trellis.Engine
+  href: Trellis.html
+  name: Trellis.Engine
+  nameWithType: Trellis.Engine
+  fullName: Trellis.Engine
+  spec.csharp:
+  - uid: Trellis
+    name: Trellis
+    href: Trellis.html
+  - name: .
+  - uid: Trellis.Engine
+    name: Engine
+    href: Trellis.Engine.html
+  spec.vb:
+  - uid: Trellis
+    name: Trellis
+    href: Trellis.html
+  - name: .
+  - uid: Trellis.Engine
+    name: Engine
+    href: Trellis.Engine.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: Trellis.Engine.TrellisEngine.#ctor*
+  commentId: Overload:Trellis.Engine.TrellisEngine.#ctor
+  href: Trellis.Engine.TrellisEngine.html#Trellis_Engine_TrellisEngine__ctor_System_String_System_String_
+  name: TrellisEngine
+  nameWithType: TrellisEngine.TrellisEngine
+  fullName: Trellis.Engine.TrellisEngine.TrellisEngine
+  nameWithType.vb: TrellisEngine.New
+  fullName.vb: Trellis.Engine.TrellisEngine.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Trellis.Engine.TrellisEngine.Reset*
+  commentId: Overload:Trellis.Engine.TrellisEngine.Reset
+  href: Trellis.Engine.TrellisEngine.html#Trellis_Engine_TrellisEngine_Reset
+  name: Reset
+  nameWithType: TrellisEngine.Reset
+  fullName: Trellis.Engine.TrellisEngine.Reset
+- uid: Trellis.Core.Passage
+  commentId: T:Trellis.Core.Passage
+  parent: Trellis.Core
+  href: Trellis.Core.Passage.html
+  name: Passage
+  nameWithType: Passage
+  fullName: Trellis.Core.Passage
+- uid: Trellis.Engine.TrellisEngine.GetCurrentPassage*
+  commentId: Overload:Trellis.Engine.TrellisEngine.GetCurrentPassage
+  href: Trellis.Engine.TrellisEngine.html#Trellis_Engine_TrellisEngine_GetCurrentPassage
+  name: GetCurrentPassage
+  nameWithType: TrellisEngine.GetCurrentPassage
+  fullName: Trellis.Engine.TrellisEngine.GetCurrentPassage
+- uid: Trellis.Core
+  commentId: N:Trellis.Core
+  href: Trellis.html
+  name: Trellis.Core
+  nameWithType: Trellis.Core
+  fullName: Trellis.Core
+  spec.csharp:
+  - uid: Trellis
+    name: Trellis
+    href: Trellis.html
+  - name: .
+  - uid: Trellis.Core
+    name: Core
+    href: Trellis.Core.html
+  spec.vb:
+  - uid: Trellis
+    name: Trellis
+    href: Trellis.html
+  - name: .
+  - uid: Trellis.Core
+    name: Core
+    href: Trellis.Core.html
+- uid: Trellis.Core.PassageStep
+  commentId: T:Trellis.Core.PassageStep
+  parent: Trellis.Core
+  href: Trellis.Core.PassageStep.html
+  name: PassageStep
+  nameWithType: PassageStep
+  fullName: Trellis.Core.PassageStep
+- uid: Trellis.Engine.TrellisEngine.GetCurrentStep*
+  commentId: Overload:Trellis.Engine.TrellisEngine.GetCurrentStep
+  href: Trellis.Engine.TrellisEngine.html#Trellis_Engine_TrellisEngine_GetCurrentStep
+  name: GetCurrentStep
+  nameWithType: TrellisEngine.GetCurrentStep
+  fullName: Trellis.Engine.TrellisEngine.GetCurrentStep
+- uid: Trellis.Engine.TrellisEngine.Step*
+  commentId: Overload:Trellis.Engine.TrellisEngine.Step
+  href: Trellis.Engine.TrellisEngine.html#Trellis_Engine_TrellisEngine_Step
+  name: Step
+  nameWithType: TrellisEngine.Step
+  fullName: Trellis.Engine.TrellisEngine.Step
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Trellis.Engine.TrellisEngine.IsFirstStep*
+  commentId: Overload:Trellis.Engine.TrellisEngine.IsFirstStep
+  href: Trellis.Engine.TrellisEngine.html#Trellis_Engine_TrellisEngine_IsFirstStep
+  name: IsFirstStep
+  nameWithType: TrellisEngine.IsFirstStep
+  fullName: Trellis.Engine.TrellisEngine.IsFirstStep
+- uid: Trellis.Engine.TrellisEngine.IsLastStep*
+  commentId: Overload:Trellis.Engine.TrellisEngine.IsLastStep
+  href: Trellis.Engine.TrellisEngine.html#Trellis_Engine_TrellisEngine_IsLastStep
+  name: IsLastStep
+  nameWithType: TrellisEngine.IsLastStep
+  fullName: Trellis.Engine.TrellisEngine.IsLastStep
+- uid: Trellis.Engine.TrellisEngine.GetChoiceCount*
+  commentId: Overload:Trellis.Engine.TrellisEngine.GetChoiceCount
+  href: Trellis.Engine.TrellisEngine.html#Trellis_Engine_TrellisEngine_GetChoiceCount
+  name: GetChoiceCount
+  nameWithType: TrellisEngine.GetChoiceCount
+  fullName: Trellis.Engine.TrellisEngine.GetChoiceCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Trellis.Engine.TrellisEngine.NavigateTo*
+  commentId: Overload:Trellis.Engine.TrellisEngine.NavigateTo
+  href: Trellis.Engine.TrellisEngine.html#Trellis_Engine_TrellisEngine_NavigateTo_System_String_
+  name: NavigateTo
+  nameWithType: TrellisEngine.NavigateTo
+  fullName: Trellis.Engine.TrellisEngine.NavigateTo
+- uid: Trellis.Core.PassageLink
+  commentId: T:Trellis.Core.PassageLink
+  href: Trellis.Core.PassageLink.html
+  name: PassageLink
+  nameWithType: PassageLink
+  fullName: Trellis.Core.PassageLink
+- uid: Trellis.Engine.TrellisEngine.GetPassageLinks*
+  commentId: Overload:Trellis.Engine.TrellisEngine.GetPassageLinks
+  href: Trellis.Engine.TrellisEngine.html#Trellis_Engine_TrellisEngine_GetPassageLinks
+  name: GetPassageLinks
+  nameWithType: TrellisEngine.GetPassageLinks
+  fullName: Trellis.Engine.TrellisEngine.GetPassageLinks
+- uid: System.Collections.Generic.List{Trellis.Core.PassageLink}
+  commentId: T:System.Collections.Generic.List{Trellis.Core.PassageLink}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<PassageLink>
+  nameWithType: List<PassageLink>
+  fullName: System.Collections.Generic.List<Trellis.Core.PassageLink>
+  nameWithType.vb: List(Of PassageLink)
+  fullName.vb: System.Collections.Generic.List(Of Trellis.Core.PassageLink)
+  name.vb: List(Of PassageLink)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Trellis.Core.PassageLink
+    name: PassageLink
+    href: Trellis.Core.PassageLink.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Trellis.Core.PassageLink
+    name: PassageLink
+    href: Trellis.Core.PassageLink.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

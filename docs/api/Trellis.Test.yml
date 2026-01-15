@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Trellis.Test
+  commentId: N:Trellis.Test
+  id: Trellis.Test
+  children:
+  - Trellis.Test.FileTest
+  langs:
+  - csharp
+  - vb
+  name: Trellis.Test
+  nameWithType: Trellis.Test
+  fullName: Trellis.Test
+  type: Namespace
+  assemblies:
+  - Trellis
+references:
+- uid: Trellis.Test.FileTest
+  commentId: T:Trellis.Test.FileTest
+  href: Trellis.Test.FileTest.html
+  name: FileTest
+  nameWithType: FileTest
+  fullName: Trellis.Test.FileTest
