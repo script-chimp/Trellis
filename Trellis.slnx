@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/Solution Items/">
     <File Path=".editorconfig" />
+    <File Path=".github/workflows/deploy-docs.yaml" />
   </Folder>
   <Project Path="ExampleTrellisGame/ExampleTrellisGame.csproj" />
   <Project Path="Trellis/Trellis.csproj" />
