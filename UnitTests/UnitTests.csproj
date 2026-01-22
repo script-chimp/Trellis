@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TestData\test-story.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="TestData\test-story.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
+    <PackageReference Include="NUnit" Version="4.4.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Trellis.Core\Trellis.Core.csproj" />
+    <ProjectReference Include="..\Trellis.Engine\Trellis.Engine.csproj" />
+    <ProjectReference Include="..\Trellis.Loader\Trellis.Loader.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -4,8 +4,8 @@
 /// Represents a collection of items and provides methods to manage them.
 /// </summary>
 /// <remarks>The Inventory class allows adding, removing, and querying items by reference or by item identifier.
-/// The collection is internally managed and exposed as a read-only list to prevent external modification.</remarks>
-internal class Inventory
+/// The collection is publicly managed and exposed as a read-only list to prevent external modification.</remarks>
+public class Inventory
 {
     private readonly List<Item> _items = new();
     public IReadOnlyList<Item> Items =>_items.AsReadOnly();

@@ -1,0 +1,35 @@
+{
+  "passages": [
+    {
+      "text": "Test body\n[[TestPassage]]",
+      "links": [
+        {
+          "name": "TestPassage",
+          "link": "TestPassage",
+          "pid": "2"
+        }
+      ],
+      "name": "Start",
+      "pid": "1",
+      "position": {
+        "x": "800",
+        "y": "325"
+      }
+    },
+    {
+      "text": "Test Passage body",
+      "name": "TestPassage",
+      "pid": "2",
+      "position": {
+        "x": "800",
+        "y": "450"
+      }
+    }
+  ],
+  "name": "test-story",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.11.0",
+  "ifid": "22354AF3-D8FE-4419-8F39-9D75AD971ACB"
+}
+

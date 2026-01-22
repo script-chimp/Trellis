@@ -1,7 +1,11 @@
-﻿using System.Text.Json;
-using Trellis.Core;
+﻿using System.Runtime.CompilerServices;
+using System.Text.Json;
 using System.Text.RegularExpressions;
+using Trellis.Core;
 using Trellis.Text;
+
+[assembly: InternalsVisibleTo("Trellis.UnitTests")]
+[assembly: InternalsVisibleTo("Trellis.Engine")]
 
 namespace Trellis.Loader
 {

@@ -4,5 +4,10 @@
     <File Path=".github/workflows/deploy-docs.yaml" />
   </Folder>
   <Project Path="ExampleTrellisGame/ExampleTrellisGame.csproj" />
+  <Project Path="Trellis.Core/Trellis.Core.csproj" Id="1c434905-1389-4760-abef-08e6aabf94c3" />
+  <Project Path="Trellis.Engine/Trellis.Engine.csproj" Id="63278cc6-356c-43d2-ba08-967dc8d3a2e7" />
+  <Project Path="Trellis.Loader/Trellis.Loader.csproj" Id="9d960157-b402-4003-a4c3-1e690a09d186" />
+  <Project Path="Trellis.Text/Trellis.Text.csproj" Id="9fb9d396-1f49-46be-a685-7d7bb3c9a6d5" />
   <Project Path="Trellis/Trellis.csproj" />
+  <Project Path="UnitTests/UnitTests.csproj" Id="a9c9dd45-975d-4881-88d0-89637b20188b" />
 </Solution>

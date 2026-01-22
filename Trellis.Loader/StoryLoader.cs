@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Trellis.Core;
+﻿using Trellis.Core;
+using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleTo("Trellis.UnitTests")]
+[assembly: InternalsVisibleTo("Trellis.Engine")]
+
 
 namespace Trellis.Loader
 {
