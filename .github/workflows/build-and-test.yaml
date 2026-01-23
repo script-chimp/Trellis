@@ -15,7 +15,7 @@ jobs:
         with:
           dotnet-version: 9.0.x
       - name: Restore dependencies
-        run: dotnet restore Trellis.slnx
+        run: dotnet restore Trellis.sln
       - name: Build
         run: dotnet build Trellis.sln --no-restore --configuration Debug
       - name: Test
