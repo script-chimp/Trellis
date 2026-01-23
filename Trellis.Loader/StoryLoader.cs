@@ -10,7 +10,7 @@ namespace Trellis.Loader
     internal class StoryLoader
     {
         private static string LoadFileText(string path) => File.ReadAllText(path);
-        public static Story LoadStoryData(string storyDataPath, string storyDataType) =>
+        internal static Story LoadStoryData(string storyDataPath, string storyDataType) =>
 
             storyDataType switch
             {
